@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>K-thar6</title>
+  <meta name="description" content="K-thar6 - Bass Dispenser in Paris 🔊">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #080808;
+      color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      text-align: center;
+    }
+
+    .logo {
+      height: auto;
+      object-fit: contain;
+      margin: 0 auto 24px;
+      display: block;
+    }
+
+    /* Logo définitif : conversion du SVG noir en blanc */
+    .logo-new {
+      width: min(250px, 70vw);
+      filter: brightness(0) invert(1);
+    }
+
+    .subtitle {
+      color: #999;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 45px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link {
+      display: block;
+      width: 100%;
+      padding: 18px 20px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: 0.2s ease;
+    }
+
+    .link:hover {
+      background: #fff;
+      color: #080808;
+      border-color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .main-link {
+      background: #f5f5f5;
+      color: #080808;
+      border-color: #f5f5f5;
+    }
+
+    .main-link:hover {
+      background: transparent;
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 45px;
+      color: #555;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 500px) {
+      body {
+        padding: 30px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <!--
+      ================================================================
+      CHOIX DU LOGO
+      ================================================================
+
+      Pour l'instant, le logo "3 points" est actif.
+
+      Lors de l'annonce du nouveau logo :
+      1. commenter la ligne logo-old
+      2. décommenter la ligne logo-new
+
+      Ne pas afficher les deux en même temps.
+    -->
+
+    <!-- LOGO ACTUEL -->
+    <img
+      class="logo-new"
+      src="logo.svg"
+      alt="Logo K-thar6"
+    >
+
+    <div class="subtitle">
+      Bass Dispenser in Paris 🔊
+    </div>
+
+    <div class="links">
+<!--
+      <a
+        class="link main-link"
+        href="next_event.html"
+      >
+        Next Event
+      </a>
+-->
+      <a
+        class="link"
+        href="https://www.instagram.com/kthar.6/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+
+      <a
+        class="link"
+        href="https://www.youtube.com/@kthar666"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube
+      </a>
+
+      <a
+        class="link"
+        href="https://on.soundcloud.com/r15F9ZHNF59"
+      >
+        SoundCloud
+      </a>
+
+    </div>
+
+    <footer>
+      K-thar6 - 2026
+    </footer>
+
+  </main>
+</body>
+</html>
