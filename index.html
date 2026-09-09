@@ -44,6 +44,29 @@
       filter: brightness(0) invert(1);
     }
 
+    /* Rond logo header (avatar) — swap la src de l'img pour ton logo rond */
+    .logo-circle {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 1px solid #444;
+      background: #111;
+      overflow: hidden;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;   /* passe en "contain" si ton logo doit rester entier */
+      /* logo.svg est noir → on l'inverse en blanc. À RETIRER si tu mets un vrai logo couleur. */
+      filter: brightness(0) invert(1);
+      padding: 14px;       /* respire dans le rond ; enlève-le avec un logo qui doit remplir */
+    }
+
     .subtitle {
       color: #999;
       font-size: 14px;
@@ -141,6 +164,14 @@
 
       Ne pas afficher les deux en même temps.
     -->
+
+    <!-- ROND LOGO HEADER (avatar) — remplace src="logo.svg" par ton logo rond -->
+    <div class="logo-circle">
+      <img
+        src="logo.svg"
+        alt="Logo K-thar6"
+      >
+    </div>
 
     <!-- LOGO ACTUEL -->
     <img
